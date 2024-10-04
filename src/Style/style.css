@@ -1,0 +1,14 @@
+body{
+    background-color: gray;
+}
+.box{
+    margin: 20px auto;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    aspect-ratio: 1;
+    background-color: #fff;
+    border: 1px solid black;
+}
