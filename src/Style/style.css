@@ -2,7 +2,10 @@ body{
     background-color: gray;
 }
 .box{
-    margin: 20px auto;
+    position: absolute;
+    inset: 0 0 0 0;
+    margin: auto;
+    z-index: 3;
     width: 300px;
     display: flex;
     align-items: center;
@@ -11,4 +14,54 @@ body{
     aspect-ratio: 1;
     background-color: #fff;
     border: 1px solid black;
+}
+.calendar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 20px;
+    list-style: none;
+}
+.date-style{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.digital-clock{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.clock{
+    margin: 20px auto;
+    max-width: 650px;
+    aspect-ratio: 1;
+    background: url(../Img/clock.png) 0 0/cover;
+    position: relative;    
+}
+.clock-seconds__arrow{
+    height: 150px;
+}
+.clock-minutes__arrow{
+    height: 200px;
+}
+.clock-hours__arrow{
+    height: 250px;
+}
+.box-center{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1px;
+    height: 1px;
+}
+.clock-arrow{
+    transform-origin: bottom;
 }
